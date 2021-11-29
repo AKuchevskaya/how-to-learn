@@ -319,6 +319,9 @@ text-decoration: none;
 .footer__column_content_info {
   display: flex;
   justify-content: end;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
 }
 
 .footer__column_content_social {
@@ -326,6 +329,7 @@ text-decoration: none;
   justify-content: end;
   padding: 0;
   margin: 0;
+  align-items: flex-start;
 }
 
 .footer__autor {
@@ -344,19 +348,22 @@ text-decoration: none;
   line-height: 30px;
   font-size: 18px;
   font-weight: 700;
+  margin: 0;
   padding: 0 0 20px;
   list-style: none;
   display: flex;
-  align-content: flex-start;
+  
 }
 
 .footer__column-links {
   color: white;
   list-style: none;
-  padding-bottom: 16px;
+  padding-bottom: 0 0 16px;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
+  align-content: flex-start;
+  margin: 0;
 }
 
 .footer__column-link {
@@ -365,8 +372,7 @@ text-decoration: none;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  display: flex;
-  align-items: center;
+
 }
 
 .footer__social-icon {
