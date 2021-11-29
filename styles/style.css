@@ -14,18 +14,379 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /*выравняла по центру и справа */
+  position: relative;
+  background-color: #f2f2f2;
+  padding-left: 64px;
+  margin: 0;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__title {
+  max-width: 730px;
+  line-height: 96px;
+  position: absolute;
+  left: 64px;
+  margin: 0;
+  text-align: left;
+  font-weight: 700;
+  font-size: 102px;
+  z-index: 99;
+}
+
+.header__subtitle {
+  position: absolute;
+  margin: 0;
+  bottom: 30px;
+  left: 64px;
+  z-index: 100;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  max-width: 388px;
+}
+
+.header__link {
+color:#2f80ed;
+text-decoration: none;
+}
+
+.header__main-illustration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 608px;
+  width: 765px;
+  z-index: 2;
+}
+
 .header__square-pic {
   height: 568px;
   width: 568px;
+  top: 64px;
+  right: 0;
+  position: absolute;
+  background-color: #2f80ed;
+  z-index: 1;
 }
 
-/* и элемента с модификатором вида ключ-значение */
+/* блок про главные проблемы в обучении */
+.description {
+  margin: 100px auto;
+  display: flex;
+}
+
+.two-columns {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+/* колонка с заголовком */
+.two-columns__brief {
+  margin: 0;
+  width: 175px;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #2f80ed;
+  font-weight: normal;
+}
+
+/* колонка с параграфами */
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  line-height: 34px;
+  font-size: 24px;
+}
+
+/* стилизация текста */
+.two-columns__paragraph {
+  margin: 0 0 30px;
+  font-style: normal;
+}
+
+/*псевдоклассом убрала нижний отступ в последнем параграфе*/
+.two-columns__paragraph:last-of-type {
+  margin: 0;
+}
+
+/*жирный текст в строке*/
+.two-columns__span-accept {
+  font-weight: 700;
+}
+
+/*блок цифры и факты*/
+.digits {
+  padding: 0 0 100px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 700;
+  width: 60%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.section-subtitle {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  width: 60%;
+  margin: 20px 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  width: 1100px;
+  justify-content: space-between;
+}
+
+.table__cell {
+  width: 250px;
+  padding: 60px 0 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  padding-top: 20px;
+}
+
+/*блок фейнмана*/
+.feynman {
+  background: #f2f2f2; 
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 890px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: flex-start;
+}
+.feynman__image {
+  width: 867px;
+  height: 637px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.feynman__title {
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 700;
+  text-align: center;
+  width: 648px;
+  margin: 100px auto 0;
+  z-index: 2;
+  position: relative;
+}
+
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  z-index: 3;
+  margin: 0 auto;
+  padding-top: 70px;
+  display: flex;
+  position: relative;
+}
+
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+  display: flex;
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  justify-self: center;
+  margin: 0;
+  color: #2f80ed;
+  align-self: end;
+}
+
+/*блок кауфмана*/
+.kaufman {
+  background-color: #000000;
+  padding: 90px 0;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  width: 877px;
+  height: 877px;
+  background-size: contain;
+  display: flex;
+  position: absolute;
+  right: -210px;
+  top: 0;
+  z-index: -1;
+}
+
+.section-title_theme_dark {
+  color: white;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
+}
+
+.table_theme_dark {
+  color: white;
+}
+
 .table__cell_theme_dark {
   width: 200px;
   color: white;
-  margin-right: 0;
   margin-top: 80px;
+  padding: 0;
+}
+
+.table__heading_theme_dark {
+  color: white;
+  margin: 0;
+}
+
+.table__text_theme_dark {
+  color: white;
+}
+
+/*подвал*/
+.footer {
+  min-height: 350px;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.footer__columns {
+  width: 90%;
+  padding: 60px 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 50%;
+}
+
+.footer__column_content_info {
+  display: flex;
+  justify-content: end;
+}
+
+.footer__column_content_social {
+  display: flex;
+  justify-content: end;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__autor {
+  padding: 18px 0;
+  margin: 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  bottom: 0;
+  left: 0;
+}
+
+.footer__column-heading {
+  color: white;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0 0 20px;
+  list-style: none;
+  display: flex;
+  align-content: flex-start;
+}
+
+.footer__column-links {
+  color: white;
+  list-style: none;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.footer__column-link {
+  color: white;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+}
+
+.footer__social-icon {
+  max-width: 16px;
+  max-height: 16px;
+  padding-right: 10px;
+}
+
+.logo {
+  width: 183px;
+}
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  height: 32px;
+}
+
+.logo_place_footer {
+  height: 35px;
+  position: static;
 }
