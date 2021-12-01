@@ -27,7 +27,7 @@
 .header__title {
   max-width: 730px;
   line-height: 96px;
-  position: absolute;
+  display: flex;
   left: 64px;
   margin: 0;
   text-align: left;
@@ -49,8 +49,8 @@
 }
 
 .header__link {
-color:#2f80ed;
-text-decoration: none;
+  color:#2f80ed;
+  text-decoration: none;
 }
 
 .header__main-illustration {
@@ -115,7 +115,7 @@ text-decoration: none;
 }
 
 /*жирный текст в строке*/
-.two-columns__span-accept {
+.two-columns__span-accent {
   font-weight: 700;
 }
 
@@ -189,7 +189,7 @@ text-decoration: none;
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 890px;
+  min-height: 890px;
   margin: 0 auto;
   align-items: center;
   justify-content: flex-start;
@@ -242,7 +242,7 @@ text-decoration: none;
 
 /*блок кауфмана*/
 .kaufman {
-  background-color: #000000;
+  background: #1f1f1f;
   padding: 90px 0;
   display: flex;
   position: relative;
@@ -295,7 +295,7 @@ text-decoration: none;
 /*подвал*/
 .footer {
   min-height: 350px;
-  background-color: #000000;
+  background: #1f1f1f;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -308,17 +308,22 @@ text-decoration: none;
   justify-content: space-between;
 }
 
-.footer__column_content_copyright {
-  flex-basis: 711px;
+.footer__column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
   max-width: 50%;
 }
 
 .footer__column_content_info {
   display: flex;
-  justify-content: end;
+  justify-content: start;
   align-items: flex-start;
   padding: 0;
   margin: 0;
@@ -326,8 +331,7 @@ text-decoration: none;
 
 .footer__column_content_social {
   display: flex;
-  justify-content: end;
-  padding: 0;
+  justify-content: start;
   margin: 0;
   align-items: flex-start;
 }
@@ -339,19 +343,17 @@ text-decoration: none;
   font-size: 18px;
   font-weight: normal;
   color: white;
-  bottom: 0;
-  left: 0;
 }
 
 .footer__column-links {
   color: white;
   list-style: none;
-  padding: 0 0 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: flex-start;
   margin: 0;
+  padding: 20px 0 16px;
 }
 
 .footer__column-heading {
@@ -360,9 +362,7 @@ text-decoration: none;
   font-size: 18px;
   font-weight: 700;
   margin: 0;
-  padding: 0 0 20px;
-  list-style: none;
-  display: flex;
+  padding: 0;
 }
 
 .footer__column-link {
@@ -371,6 +371,7 @@ text-decoration: none;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+  list-style: none;
 }
 
 .footer__social-icon {
