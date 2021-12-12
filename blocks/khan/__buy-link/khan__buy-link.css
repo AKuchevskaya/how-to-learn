@@ -6,7 +6,7 @@
     text-decoration: none;
 }
 
-.khan__book-link {
+.khan__book-link:hover {
     opacity: .4;
     transition: opacity 2s ease-out;
 }

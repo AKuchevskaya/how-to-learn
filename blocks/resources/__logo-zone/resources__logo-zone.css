@@ -4,4 +4,6 @@
     display: flex;
     justify-content: center;
     align-content: space-around;
+    list-style: none;
+    padding: 0;
 }
