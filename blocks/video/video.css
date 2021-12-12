@@ -1,8 +1,9 @@
-.techniques {
+.video {
     margin: 100px auto 0;
-    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /*background-color: cornflowerblue;*/
+    z-index: 99;
 }

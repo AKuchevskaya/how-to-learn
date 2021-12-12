@@ -1,13 +1,11 @@
 .cards__item {
     width: 240px;
     list-style: none;
-    background-color: blueviolet;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-right: 100px;
     align-self: start;
-    
 }
 
 .cards__item:nth-last-child(3n) {

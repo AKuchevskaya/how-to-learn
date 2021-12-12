@@ -1,0 +1,9 @@
+.video__iframes {
+    margin: 50px auto -60px;
+    width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    /*z-index: 1;
+    background-color: crimson;*/
+    position: relative;
+}
